@@ -42,6 +42,7 @@
 		FAEEF9981D87ECF700098B8D /* HBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBManager.m; sourceTree = "<group>"; };
 		FAEEF9991D87ECF700098B8D /* HBNetTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBNetTool.h; sourceTree = "<group>"; };
 		FAEEF99A1D87ECF700098B8D /* HBNetTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBNetTool.m; sourceTree = "<group>"; };
+		FAEEF99E1D87F36300098B8D /* HBDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBDefine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +95,7 @@
 		FAC86AA51D87D553009009DE /* HBPublicTools */ = {
 			isa = PBXGroup;
 			children = (
+				FAEEF99D1D87F36300098B8D /* Lib */,
 				FAEEF9961D87ECF700098B8D /* HBNetTool */,
 				FAEEF9921D87E88200098B8D /* HBToast */,
 				FAC86ABD1D87D83E009009DE /* HBPublicTools */,
@@ -145,6 +147,14 @@
 				FAEEF99A1D87ECF700098B8D /* HBNetTool.m */,
 			);
 			path = HBNetTool;
+			sourceTree = "<group>";
+		};
+		FAEEF99D1D87F36300098B8D /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				FAEEF99E1D87F36300098B8D /* HBDefine.h */,
+			);
+			path = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
