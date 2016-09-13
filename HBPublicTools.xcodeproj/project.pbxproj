@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD648F25D932ABB854D8506A /* libPods-HBPublicTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4CDB79B5571BF577C8382B /* libPods-HBPublicTools.a */; };
 		FAC86AA81D87D553009009DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC86AA71D87D553009009DE /* main.m */; };
 		FAC86AAB1D87D553009009DE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC86AAA1D87D553009009DE /* AppDelegate.m */; };
 		FAC86AAE1D87D553009009DE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC86AAD1D87D553009009DE /* ViewController.m */; };
@@ -15,9 +16,14 @@
 		FAC86AB61D87D553009009DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC86AB41D87D553009009DE /* LaunchScreen.storyboard */; };
 		FAC86AC91D87DA95009009DE /* NSObject+HBPublicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC86AC81D87DA95009009DE /* NSObject+HBPublicTool.m */; };
 		FAEEF9951D87E88200098B8D /* HBToast.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEEF9941D87E88200098B8D /* HBToast.m */; };
+		FAEEF99B1D87ECF700098B8D /* HBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEEF9981D87ECF700098B8D /* HBManager.m */; };
+		FAEEF99C1D87ECF700098B8D /* HBNetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEEF99A1D87ECF700098B8D /* HBNetTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A4CDB79B5571BF577C8382B /* libPods-HBPublicTools.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HBPublicTools.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		340119B2130F10250DFC43AA /* Pods-HBPublicTools.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBPublicTools.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HBPublicTools/Pods-HBPublicTools.debug.xcconfig"; sourceTree = "<group>"; };
+		C50766BB33D2919636C01D0A /* Pods-HBPublicTools.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HBPublicTools.release.xcconfig"; path = "Pods/Target Support Files/Pods-HBPublicTools/Pods-HBPublicTools.release.xcconfig"; sourceTree = "<group>"; };
 		FAC86AA31D87D553009009DE /* HBPublicTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HBPublicTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC86AA71D87D553009009DE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FAC86AA91D87D553009009DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -32,6 +38,10 @@
 		FAC86AC81D87DA95009009DE /* NSObject+HBPublicTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HBPublicTool.m"; sourceTree = "<group>"; };
 		FAEEF9931D87E88200098B8D /* HBToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBToast.h; sourceTree = "<group>"; };
 		FAEEF9941D87E88200098B8D /* HBToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBToast.m; sourceTree = "<group>"; };
+		FAEEF9971D87ECF700098B8D /* HBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBManager.h; sourceTree = "<group>"; };
+		FAEEF9981D87ECF700098B8D /* HBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBManager.m; sourceTree = "<group>"; };
+		FAEEF9991D87ECF700098B8D /* HBNetTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBNetTool.h; sourceTree = "<group>"; };
+		FAEEF99A1D87ECF700098B8D /* HBNetTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBNetTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD648F25D932ABB854D8506A /* libPods-HBPublicTools.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8277D11996BBABBAE12CD00A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				340119B2130F10250DFC43AA /* Pods-HBPublicTools.debug.xcconfig */,
+				C50766BB33D2919636C01D0A /* Pods-HBPublicTools.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C8C9D3AB52B1D7F5A9F7BD86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A4CDB79B5571BF577C8382B /* libPods-HBPublicTools.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FAC86A9A1D87D553009009DE = {
 			isa = PBXGroup;
 			children = (
 				FAC86AA51D87D553009009DE /* HBPublicTools */,
 				FAC86AA41D87D553009009DE /* Products */,
+				8277D11996BBABBAE12CD00A /* Pods */,
+				C8C9D3AB52B1D7F5A9F7BD86 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +94,7 @@
 		FAC86AA51D87D553009009DE /* HBPublicTools */ = {
 			isa = PBXGroup;
 			children = (
+				FAEEF9961D87ECF700098B8D /* HBNetTool */,
 				FAEEF9921D87E88200098B8D /* HBToast */,
 				FAC86ABD1D87D83E009009DE /* HBPublicTools */,
 				FAC86AA91D87D553009009DE /* AppDelegate.h */,
@@ -105,6 +136,17 @@
 			path = HBToast;
 			sourceTree = "<group>";
 		};
+		FAEEF9961D87ECF700098B8D /* HBNetTool */ = {
+			isa = PBXGroup;
+			children = (
+				FAEEF9971D87ECF700098B8D /* HBManager.h */,
+				FAEEF9981D87ECF700098B8D /* HBManager.m */,
+				FAEEF9991D87ECF700098B8D /* HBNetTool.h */,
+				FAEEF99A1D87ECF700098B8D /* HBNetTool.m */,
+			);
+			path = HBNetTool;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,9 +154,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FAC86ABA1D87D553009009DE /* Build configuration list for PBXNativeTarget "HBPublicTools" */;
 			buildPhases = (
+				46E6931C7CD8533B5AC78492 /* Check Pods Manifest.lock */,
 				FAC86A9F1D87D553009009DE /* Sources */,
 				FAC86AA01D87D553009009DE /* Frameworks */,
 				FAC86AA11D87D553009009DE /* Resources */,
+				B930753C0C7415B11D81BD0B /* Embed Pods Frameworks */,
+				10960C6B4C35B50201CF1E30 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,6 +215,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		10960C6B4C35B50201CF1E30 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HBPublicTools/Pods-HBPublicTools-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46E6931C7CD8533B5AC78492 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B930753C0C7415B11D81BD0B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HBPublicTools/Pods-HBPublicTools-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FAC86A9F1D87D553009009DE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -180,6 +273,8 @@
 				FAEEF9951D87E88200098B8D /* HBToast.m in Sources */,
 				FAC86AAB1D87D553009009DE /* AppDelegate.m in Sources */,
 				FAC86AA81D87D553009009DE /* main.m in Sources */,
+				FAEEF99C1D87ECF700098B8D /* HBNetTool.m in Sources */,
+				FAEEF99B1D87ECF700098B8D /* HBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +386,7 @@
 		};
 		FAC86ABB1D87D553009009DE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 340119B2130F10250DFC43AA /* Pods-HBPublicTools.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HBPublicTools/Info.plist;
@@ -303,6 +399,7 @@
 		};
 		FAC86ABC1D87D553009009DE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C50766BB33D2919636C01D0A /* Pods-HBPublicTools.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HBPublicTools/Info.plist;
