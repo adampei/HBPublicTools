@@ -24,6 +24,23 @@
 #pragma mark - NSObject分类
 @interface NSObject (HBPublicTool)
 
+/**
+ *  验证固话是否合法
+ *
+ *  @param phoneNumber 固话字符串
+ *
+ *  @return 返回BOOL值
+ */
+- (BOOL)bb_isLegalForGuHua:(NSString *)phoneNumber;
+
+
+/**
+ *  验证邮箱合法性
+ *
+ *  @param strMailBox 邮箱字符串
+ *
+ *  @return 返回bool值
+ */
 -(BOOL)bb_isLegalForMailBox:(NSString *)strMailBox;
 
 /**
