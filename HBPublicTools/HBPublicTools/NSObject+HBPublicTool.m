@@ -79,7 +79,31 @@
 #pragma mark - NSObject分类
 @implementation NSObject (HBPublicTool)
 
-
+//多个label控件一个view中居中显示
+-(void)bb_setLablesWithArrOfTitle:(NSArray<NSString *> *)arrTitles andLeftDistance:(CGFloat)lDistance andItWidth:(CGFloat)width andItHeight:(CGFloat)height andYcoordinate:(CGFloat) y andDestiView:(UIView *)destiView{
+    
+    CGFloat screenWidth = [UIScreen mainScreen].bounds.size.width;
+    CGFloat margin = (screenWidth - 2*lDistance - width*arrTitles.count) / (arrTitles.count - 1);
+    UILabel * tempLabel = [UILabel new];
+    
+    for (int i = 0; i< arrTitles.count; i++) {
+        
+        if (i == 0) {
+            
+            UILabel * lbl = [[UILabel alloc] initWithFrame:CGRectMake(lDistance, y, width, height)];
+            lbl.textAlignment = NSTextAlignmentCenter;
+            lbl.text = arrTitles[0];
+            [destiView addSubview:lbl];
+            tempLabel = lbl;
+            continue;
+        }
+        UILabel * lbl = [[UILabel alloc] initWithFrame:CGRectMake((CGRectGetMaxX(tempLabel.frame)+margin), y, width, height)];
+        lbl.textAlignment = NSTextAlignmentCenter;
+        lbl.text = arrTitles[i];
+        [destiView addSubview:lbl];
+        tempLabel = lbl;
+    }
+}
 
 //是否纯数字
 -(BOOL)bb_isLegalForDigital:(NSString *)str{

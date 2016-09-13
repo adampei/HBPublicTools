@@ -25,6 +25,18 @@
 @interface NSObject (HBPublicTool)
 
 /**
+ *  设置中间部分控件两两之间距离相等
+ *
+ *  @param arrTitles label的名字数组
+ *  @param lDistance 最左边控件距离屏幕左边的距离
+ *  @param width     控件宽度
+ *  @param height    控件高度
+ *  @param y         控件y坐标
+ */
+-(void)bb_setLablesWithArrOfTitle:(NSArray<NSString *> *)arrTitles andLeftDistance:(CGFloat)lDistance andItWidth:(CGFloat)width andItHeight:(CGFloat)height andYcoordinate:(CGFloat) y andDestiView:(UIView *)destiView;
+
+
+/**
  *  验证纯数字
  *
  *  @param str 验证字符串
