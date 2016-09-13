@@ -76,6 +76,17 @@
 #pragma mark - NSObject分类
 @implementation NSObject (HBPublicTool)
 
+
+
+//手机号是否合法
+-(BOOL)bb_isLegalForPhoneNumber:(NSString *)strPhone{
+
+    NSString * phoneRegex = @"^[1]([3][0-9]{1}|34|35|36|37|38|39|47|50|51|52|57|58|59|78|82|83|84|87|88|30|31|32|45|55|56|71|75|76|85|86|33|49|53|73|77|80|81|89|70)[0-9]{8}$";
+    NSPredicate * phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex];
+    return [phoneTest evaluateWithObject:strPhone];
+}
+
+
 //轻触手势
 -(void)bb_addTapGestureWithDestiView:(id)object withSelector:(SEL)selector andTarget:(id)target{
     

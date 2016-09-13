@@ -18,9 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-
-    //1473749494
-    NSLog(@"%@",[self bb_changeTimestampToString:@"1473749494" withFormat:nil]);
+    if ([self bb_isLegalForPhoneNumber:@"15830975407"]) {
+        
+        NSLog(@"YES");
+    }else{
+    
+        NSLog(@"NO");
+    }
 }
 
 - (void)didReceiveMemoryWarning {

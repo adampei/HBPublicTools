@@ -21,8 +21,10 @@
 - (NSString *)md5;
 @end
 
-
+#pragma mark - NSObject分类
 @interface NSObject (HBPublicTool)
+
+-(BOOL)bb_isLegalForPhoneNumber:(NSString *)strPhone;
 
 /** 添加轻触手势 */
 -(void)bb_addTapGestureWithDestiView:(id)object withSelector:(SEL)selector andTarget:(id)target;
