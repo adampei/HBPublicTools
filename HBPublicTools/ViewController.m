@@ -7,16 +7,20 @@
 //
 
 #import "ViewController.h"
-
+#import "NSObject+HBPublicTool.h"
 @interface ViewController ()
 
 @end
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+
+    //1473749494
+    NSLog(@"%@",[self bb_changeTimestampToString:@"1473749494" withFormat:nil]);
 }
 
 - (void)didReceiveMemoryWarning {

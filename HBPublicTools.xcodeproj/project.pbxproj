@@ -13,6 +13,7 @@
 		FAC86AB11D87D553009009DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC86AAF1D87D553009009DE /* Main.storyboard */; };
 		FAC86AB31D87D553009009DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC86AB21D87D553009009DE /* Assets.xcassets */; };
 		FAC86AB61D87D553009009DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC86AB41D87D553009009DE /* LaunchScreen.storyboard */; };
+		FAC86AC91D87DA95009009DE /* NSObject+HBPublicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC86AC81D87DA95009009DE /* NSObject+HBPublicTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		FAC86AB21D87D553009009DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC86AB51D87D553009009DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAC86AB71D87D553009009DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC86AC71D87DA95009009DE /* NSObject+HBPublicTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HBPublicTool.h"; sourceTree = "<group>"; };
+		FAC86AC81D87DA95009009DE /* NSObject+HBPublicTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HBPublicTool.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,7 @@
 		FAC86AA51D87D553009009DE /* HBPublicTools */ = {
 			isa = PBXGroup;
 			children = (
+				FAC86ABD1D87D83E009009DE /* HBPublicTools */,
 				FAC86AA91D87D553009009DE /* AppDelegate.h */,
 				FAC86AAA1D87D553009009DE /* AppDelegate.m */,
 				FAC86AAC1D87D553009009DE /* ViewController.h */,
@@ -77,6 +81,15 @@
 				FAC86AA71D87D553009009DE /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAC86ABD1D87D83E009009DE /* HBPublicTools */ = {
+			isa = PBXGroup;
+			children = (
+				FAC86AC71D87DA95009009DE /* NSObject+HBPublicTool.h */,
+				FAC86AC81D87DA95009009DE /* NSObject+HBPublicTool.m */,
+			);
+			path = HBPublicTools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC86AC91D87DA95009009DE /* NSObject+HBPublicTool.m in Sources */,
 				FAC86AAE1D87D553009009DE /* ViewController.m in Sources */,
 				FAC86AAB1D87D553009009DE /* AppDelegate.m in Sources */,
 				FAC86AA81D87D553009009DE /* main.m in Sources */,
@@ -266,6 +280,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HBPublicTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xinfenbao.jzbussxinfenbao.HBPublicTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -277,6 +292,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HBPublicTools/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xinfenbao.jzbussxinfenbao.HBPublicTools;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -302,6 +318,7 @@
 				FAC86ABC1D87D553009009DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
