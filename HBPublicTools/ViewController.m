@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    if ([self bb_isLegalForPhoneNumber:@"15830975407"]) {
+    if ([self bb_isLegalForMailBox:@"abo.x@163.com"]) {
         
         NSLog(@"YES");
     }else{

@@ -76,6 +76,13 @@
 #pragma mark - NSObject分类
 @implementation NSObject (HBPublicTool)
 
+//邮箱是否合法
+-(BOOL)bb_isLegalForMailBox:(NSString *)strMailBox{
+
+    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    return [emailTest evaluateWithObject:strMailBox];
+}
 
 
 //手机号是否合法

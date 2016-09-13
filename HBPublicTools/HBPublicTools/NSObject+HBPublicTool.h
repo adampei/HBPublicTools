@@ -24,6 +24,15 @@
 #pragma mark - NSObject分类
 @interface NSObject (HBPublicTool)
 
+-(BOOL)bb_isLegalForMailBox:(NSString *)strMailBox;
+
+/**
+ *  验证手机号是否合法
+ *
+ *  @param strPhone 手机号码字符串
+ *
+ *  @return 返回bool值
+ */
 -(BOOL)bb_isLegalForPhoneNumber:(NSString *)strPhone;
 
 /** 添加轻触手势 */
