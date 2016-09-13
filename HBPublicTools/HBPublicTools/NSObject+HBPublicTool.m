@@ -76,6 +76,16 @@
 #pragma mark - NSObject分类
 @implementation NSObject (HBPublicTool)
 
+//是否纯数字
+-(BOOL)bb_isLegalForDigital:(NSString *)str{
+
+    NSString * phoneRegex = @"^[0-9]*$";
+    NSPredicate * phoneTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",phoneRegex];
+    return [phoneTest evaluateWithObject:str];
+}
+
+
+
 //固话是否合法
 - (BOOL)bb_isLegalForGuHua:(NSString *)phoneNumber{
 

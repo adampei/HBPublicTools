@@ -25,6 +25,15 @@
 @interface NSObject (HBPublicTool)
 
 /**
+ *  验证纯数字
+ *
+ *  @param str 验证字符串
+ *
+ *  @return BOOL类型
+ */
+-(BOOL)bb_isLegalForDigital:(NSString *)str;
+
+/**
  *  验证固话是否合法
  *
  *  @param phoneNumber 固话字符串

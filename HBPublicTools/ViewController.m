@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    if ([self bb_isLegalForGuHua:@"03118328218"]) {
+    if ([self bb_isLegalForDigital:@"1231"]) {
         
         NSLog(@"YES");
     }else{
