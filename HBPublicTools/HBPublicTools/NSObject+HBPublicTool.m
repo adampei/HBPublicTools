@@ -9,6 +9,9 @@
 #import "NSObject+HBPublicTool.h"
 #import <CommonCrypto/CommonDigest.h>
 
+#define kScreenB [UIScreen mainScreen].bounds
+#define kScreenH [UIScreen mainScreen].bounds.size.height
+#define kScreenW [UIScreen mainScreen].bounds.size.width
 #pragma mark - 字典数组打印
 @implementation NSDictionary (Log)
 -(NSString *)descriptionWithLocale:(id)locale{
@@ -75,6 +78,8 @@
 
 #pragma mark - NSObject分类
 @implementation NSObject (HBPublicTool)
+
+
 
 //是否纯数字
 -(BOOL)bb_isLegalForDigital:(NSString *)str{

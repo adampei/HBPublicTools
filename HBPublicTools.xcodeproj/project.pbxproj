@@ -14,6 +14,7 @@
 		FAC86AB31D87D553009009DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC86AB21D87D553009009DE /* Assets.xcassets */; };
 		FAC86AB61D87D553009009DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC86AB41D87D553009009DE /* LaunchScreen.storyboard */; };
 		FAC86AC91D87DA95009009DE /* NSObject+HBPublicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC86AC81D87DA95009009DE /* NSObject+HBPublicTool.m */; };
+		FAEEF9951D87E88200098B8D /* HBToast.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEEF9941D87E88200098B8D /* HBToast.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		FAC86AB71D87D553009009DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAC86AC71D87DA95009009DE /* NSObject+HBPublicTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HBPublicTool.h"; sourceTree = "<group>"; };
 		FAC86AC81D87DA95009009DE /* NSObject+HBPublicTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HBPublicTool.m"; sourceTree = "<group>"; };
+		FAEEF9931D87E88200098B8D /* HBToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HBToast.h; sourceTree = "<group>"; };
+		FAEEF9941D87E88200098B8D /* HBToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HBToast.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 		FAC86AA51D87D553009009DE /* HBPublicTools */ = {
 			isa = PBXGroup;
 			children = (
+				FAEEF9921D87E88200098B8D /* HBToast */,
 				FAC86ABD1D87D83E009009DE /* HBPublicTools */,
 				FAC86AA91D87D553009009DE /* AppDelegate.h */,
 				FAC86AAA1D87D553009009DE /* AppDelegate.m */,
@@ -90,6 +94,15 @@
 				FAC86AC81D87DA95009009DE /* NSObject+HBPublicTool.m */,
 			);
 			path = HBPublicTools;
+			sourceTree = "<group>";
+		};
+		FAEEF9921D87E88200098B8D /* HBToast */ = {
+			isa = PBXGroup;
+			children = (
+				FAEEF9931D87E88200098B8D /* HBToast.h */,
+				FAEEF9941D87E88200098B8D /* HBToast.m */,
+			);
+			path = HBToast;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +177,7 @@
 			files = (
 				FAC86AC91D87DA95009009DE /* NSObject+HBPublicTool.m in Sources */,
 				FAC86AAE1D87D553009009DE /* ViewController.m in Sources */,
+				FAEEF9951D87E88200098B8D /* HBToast.m in Sources */,
 				FAC86AAB1D87D553009009DE /* AppDelegate.m in Sources */,
 				FAC86AA81D87D553009009DE /* main.m in Sources */,
 			);
