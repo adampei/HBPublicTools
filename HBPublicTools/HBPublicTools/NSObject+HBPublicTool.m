@@ -79,6 +79,13 @@
 #pragma mark - NSObject分类
 @implementation NSObject (HBPublicTool)
 
+-(CGFloat)getLabelHeightWithContent:(NSString *)content andLabelWidth:(CGFloat)width andLabelFontSize:(int)font{
+
+    CGSize size = [content boundingRectWithSize:CGSizeMake(width, MAXFLOAT) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:font]} context:nil].size;
+    return size.height;
+}
+
+
 //多个label控件一个view中居中显示
 -(void)bb_setLablesWithArrOfTitle:(NSArray<NSString *> *)arrTitles andLeftDistance:(CGFloat)lDistance andItWidth:(CGFloat)width andItHeight:(CGFloat)height andYcoordinate:(CGFloat) y andDestiView:(UIView *)destiView{
     

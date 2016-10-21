@@ -24,6 +24,19 @@
 #pragma mark - NSObject分类
 @interface NSObject (HBPublicTool)
 
+
+/**
+ 计算lable高度
+
+ @param content lable内容
+ @param width   label宽度
+ @param font    字体大小
+
+ @return label高度
+ */
+-(CGFloat)getLabelHeightWithContent:(NSString *)content andLabelWidth:(CGFloat)width andLabelFontSize:(int)font;
+
+
 /**
  *  设置中间部分控件两两之间距离相等
  *
